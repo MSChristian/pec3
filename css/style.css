@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--background-main-color);
+    font-family: 'Noto Serif', serif;
 }
 
 body a {
@@ -38,12 +39,14 @@ body header nav {
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1vh;
 }
 
 body header nav > div {
-    -webkit-flex: auto;
-    flex: auto;
+    flex: 240px;
+    justify-content: center;
 }
 
 body header nav div img.logo {
@@ -78,4 +81,20 @@ a.main-link > span{
     font-weight: 400;
     font-family: 'Noto Serif', serif;
 }
+
+.btn-red {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    background-color: var(--btn-red-background-color);
+    color: var(--btn-red-background-link-color);
+}
+
+.btn-red:hover {
+    color: var(--btn-red-background-link-hover-color);
+}
+
 
