@@ -1,0 +1,81 @@
+:root {
+    --link-color: rgba(28, 28, 28, 1);
+    --link-hover-color: rgba(28, 28, 28, 0.5);
+    --background-main-color: rgb(232, 232, 232);
+    --background-footer-color: rgb(67, 58, 68);
+    --text-color: rgb(28, 28, 28);
+    --contrast-color: rgb(155, 23, 0);
+    --contrast-footer-color: rgb(255, 255, 255);
+    --link-footer-color: rgb(255, 255, 255);
+    --link-footer-hover-color: rgb(155, 23, 0);
+    --btn-red-background-color: rgb(155, 23, 0);
+    --btn-red-background-link-color: rgb(255, 255, 255);
+    --btn-red-background-link-hover-color: rgb(28, 28, 28);
+}
+
+body {
+    background-color: var(--background-main-color);
+}
+
+body a {
+    color: var(--link-color);
+    font: italic normal bold inherit 'Noto Serif', serif;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: var(--link-hover-color);
+}
+
+body a:active {
+    color: var(--link-color);
+    font-weight: 700;
+    font-style: italic;
+}
+
+body header nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+
+body header nav > div {
+    -webkit-flex: auto;
+    flex: auto;
+}
+
+body header nav div img.logo {
+    margin-right: 10px;
+}
+
+body header nav div {
+    display: flex;
+}
+
+a.main-link {
+    text-decoration: none;
+    align-self: center;
+}
+
+a.main-link > span{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-text-black {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-family: 'Noto Serif', serif;
+}
+
+.logo-text-red {
+    color: var(--contrast-color);
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;
+}
+
