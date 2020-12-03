@@ -13,48 +13,32 @@
     --btn-red-background-link-hover-color: rgb(28, 28, 28);
 }
 
+/*Layout y comunes*/
+
 body {
     background-color: var(--background-main-color);
     font-family: 'Noto Serif', serif;
 }
 
-body a {
+a {
     color: var(--link-color);
     font: italic normal bold inherit 'Noto Serif', serif;
     text-decoration: none;
 }
 
-body a:hover {
+a:hover {
     color: var(--link-hover-color);
 }
 
-body a:active {
+a:active {
     color: var(--link-color);
     font-weight: 700;
     font-style: italic;
 }
 
-body header nav {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1vh;
-}
-
-body header nav > div {
-    flex: 240px;
-    justify-content: center;
-}
 
 body header nav div img.logo {
     margin-right: 10px;
-}
-
-body header nav div {
-    display: flex;
 }
 
 a.main-link {
@@ -82,7 +66,8 @@ a.main-link > span{
     font-family: 'Noto Serif', serif;
 }
 
-.btn-red {
+/*Botones*/
+.btn-main {
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding: 10px 15px;
@@ -93,8 +78,65 @@ a.main-link > span{
     color: var(--btn-red-background-link-color);
 }
 
-.btn-red:hover {
+.btn-main:hover {
     color: var(--btn-red-background-link-hover-color);
 }
 
 
+/*Flex*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+.flex-1 {flex: 1;}
+.flex-2 {flex: 2;}
+.flex-3 {flex: 3;}
+.flex-4 {flex: 4;}
+
+/*Margenes*/
+.mr-5 {margin-right: 5px;}
+.mr-10 {margin-right: 10px;}
+.mr-15 {margin-right: 15px;}
+.mr-20 {margin-right: 20px;}
+
+.ml-5 {margin-left: 5px;}
+.ml-10 {margin-left: 10px;}
+.ml-15 {margin-left: 15px;}
+.ml-20 {margin-left: 20px;}
+
+/*Propiedades dependientes de tamaño de pantalla*/
+@media screen and (max-width: 799px) {
+    .s-flex-order-1 {order: 1;}
+    .s-flex-order-2 {order: 2;}
+    .s-flex-order-3 {order: 3;}
+    .s-flex-order-4 {order: 4;}
+    .s-justifiy-center {
+        justify-content: center;
+    }
+    .s-fit-to-content {
+        display: flex;
+        flex:1 1 auto;
+    }
+    .s-content-full-with > div{
+        min-width: 100vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .x-flex-order-1 {order: 1;}
+    .x-flex-order-2 {order: 2;}
+    .x-flex-order-3 {order: 3;}
+    .x-flex-order-4 {order: 4;}
+    .x-justify-end {
+        justify-content: flex-end;
+    }
+
+    .x-justify-start {
+        justify-content: flex-start;
+    }
+}
