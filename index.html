@@ -7,31 +7,175 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav class="flex s-content-full-with">
-        <div class="flex s-flex-order-2 s-justifiy-center" id="main-logo">
+<header id="header">
+    <nav class="flex flex-wrap s-content-full-with">
+        <div class="text-center s-flex-order-2 s-justifiy-center x-justify-start" id="main-logo">
             <img class="logo" src="img/oscarsclub-isologo.png" alt="logo oscars club">
             <a class="main-link" href="index.html">
                 <span class="logo-text-black">oscars</span><span class="logo-text-red">club</span>
             </a>
         </div>
-        <div class="flex s-flex-order-3 s-justifiy-center x-justify-end s-fit-to-content">
-            <span class="mr-5">CLUBES TEMÁTICOS</span>
+        <div class="text-center s-flex-order-3 s-justifiy-center x-justify-end s-fit-to-content mt-20">
+            <a href="/pages/clubes/clubes-tematicos.html">
+                <span class="mr-5 bold">CLUBES TEMÁTICOS</span>
+            </a>
+
         </div>
-        <div class="flex s-flex-order-4 s-justifiy-center x-justify-start s-fit-to-content">
-            <span class="ml-5">SESIONES 2020</span>
+        <div class="text-center s-flex-order-4 s-justifiy-center x-justify-start s-fit-to-content mt-20">
+            <a href="/pages/sesiones/sesiones-2020.html">
+                <span class="ml-5 bold">SESIONES 2020</span>
+            </a>
         </div>
-        <div class="flex s-flex-order-1 s-justifiy-center x-justify-end">
+        <div class="text-center s-flex-order-1 s-justifiy-center x-justify-end">
             <button class="btn-main">Iniciar sesión</button>
         </div>
     </nav>
-
 </header>
-<main>
+
+<main class="flex-column align-center text-center">
+
+    <section id="whatis" class="x-width-40 mt-40">
+        <h2>¿Qué es Oscars Club?</h2>
+
+        <p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en
+            diferentes lenguas, para los amantes del cine que quieran compartir
+            reflexiones y debatir sobre las películas que les interesan sin necesidad
+            de tener que ir a un espacio físico.</p>
+    </section>
+
+    <section id="how-it-works" class="mt-40">
+        <h2>¿Cómo funciona?</h2>
+
+        <div id="link" class="s-flex-column x-flex-row x-width-50 s-width-90">
+
+            <div class="menu-link">
+                <img src="img/howto-register.png" alt="registro">
+                <p>Regístrate</p>
+            </div>
+
+            <div class="menu-link">
+                <img src="img/howto-club.png" alt="registro">
+                <p>Inscríbete en un club</p>
+            </div>
+
+            <div class="menu-link">
+                <img src="img/howto-film.png" alt="registro">
+                <p>Elige una película</p>
+            </div>
+
+            <div class="menu-link">
+                <img src="img/howto-speech.png" alt="registro">
+                <p>Disfruta del debate</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="join-the-club" class="mt-40 flex">
+        <h2>Únete al club</h2>
+
+        <div>
+            <p>Estamos mirando tu próxima película preferida.</p>
+            <p>¿Te lo vas a perder?</p>
+        </div>
+
+        <div>
+            <form action="">
+                <div class="form-group">
+                    <label for="name" class="hidden"></label>
+                    <input type="text" id="name" required placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="hidden"></label>
+                    <input type="email" id="email" required placeholder="Correo electrónico">
+                </div>
+
+                <div class="form-group">
+                    <label for="passsword" class="hidden"></label>
+                    <input type="password" id="passsword" required placeholder="Contraseña">
+                </div>
+
+                <small>
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
+                    OSCARS CLUB. Finalidades: recogida de datos para la
+                    inscripción como socio del interesado.Legitimación:
+                    Consentimiento del interesado. Destinatarios: No están previstas
+                    cesiones de datos a terceros, salvo obligación legal. Derechos:
+                    Puede retirar su consentimiento en cualquier momento, así como
+                    acceder, rectificar, suprimir sus datos y otros derechos
+                    dirigiéndose a oscarsclub@oscarsclub.org. Información
+                    Adicional: Puede ampliar la información en el enlace de
+                    <a href="">Aviso Legal</a> y
+                    <a href="">Política de privacidad.</a>
+                </small>
+
+                <div class="form-inline">
+                    <input type="checkbox" id="accept-lopd" required/>
+                    <label for="accept-lopd">He leído y acepto la política de privacidad</label>
+                </div>
+
+                <div>
+                    <button class="btn-main" type="submit">
+                        REGISTRARSE
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </section>
 
 </main>
-<footer>
 
+<footer class="footer flex-column">
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="">Aviso legal</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidad</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="">Facebook</a>
+                </li>
+                <li>
+                    <a href="">Twitter</a>
+                </li>
+                <li>
+                    <a href="">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>
+                © 2020 Nombre y apellidos del estudiante
+            </li>
+            <li>
+                <a href="https://unsplash.com">Imágenes unsplash.com</a>
+            </li>
+            <li>
+                <a href="">Youtube</a>
+            </li>
+        </ul>
+    </div>
+    <div class="back-link">
+        <a href="#header">&xwedge;</a>
+    </div>
 </footer>
 
 </body>
