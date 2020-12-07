@@ -34,8 +34,8 @@
 
 <main class="flex-column align-center text-center">
 
-    <section id="whatis" class="x-width-40 mt-40">
-        <h2>¿Qué es Oscars Club?</h2>
+    <section id="whatis" class="x-width-40vw mt-40">
+        <h2 class="x-big-h2">¿Qué es Oscars Club?</h2>
 
         <p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en
             diferentes lenguas, para los amantes del cine que quieran compartir
@@ -44,9 +44,9 @@
     </section>
 
     <section id="how-it-works" class="mt-40">
-        <h2>¿Cómo funciona?</h2>
+        <h2 class="x-big-h2">¿Cómo funciona?</h2>
 
-        <div id="link" class="s-flex-column x-flex-row x-width-50 s-width-90">
+        <div id="link" class="s-flex-column x-flex-row x-width-50vw s-width-60vw">
 
             <div class="menu-link">
                 <img src="img/howto-register.png" alt="registro">
@@ -72,101 +72,125 @@
 
     </section>
 
-    <section id="join-the-club" class="mt-40 flex">
-        <h2>Únete al club</h2>
-
+    <section id="join-the-club" class="mt-40 flex-column x-width-50vw s-width-90vw ">
         <div>
-            <p>Estamos mirando tu próxima película preferida.</p>
-            <p>¿Te lo vas a perder?</p>
+            <h2 class="x-big-h2">Únete al club</h2>
         </div>
 
-        <div>
-            <form action="">
-                <div class="form-group">
-                    <label for="name" class="hidden"></label>
-                    <input type="text" id="name" required placeholder="Nombre">
-                </div>
+        <div class="x-flex-row text-left font-open-sans">
 
-                <div class="form-group">
-                    <label for="email" class="hidden"></label>
-                    <input type="email" id="email" required placeholder="Correo electrónico">
-                </div>
-
-                <div class="form-group">
-                    <label for="passsword" class="hidden"></label>
-                    <input type="password" id="passsword" required placeholder="Contraseña">
-                </div>
-
-                <small>
-                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
-                    OSCARS CLUB. Finalidades: recogida de datos para la
-                    inscripción como socio del interesado.Legitimación:
-                    Consentimiento del interesado. Destinatarios: No están previstas
-                    cesiones de datos a terceros, salvo obligación legal. Derechos:
-                    Puede retirar su consentimiento en cualquier momento, así como
-                    acceder, rectificar, suprimir sus datos y otros derechos
-                    dirigiéndose a oscarsclub@oscarsclub.org. Información
-                    Adicional: Puede ampliar la información en el enlace de
-                    <a href="">Aviso Legal</a> y
-                    <a href="">Política de privacidad.</a>
-                </small>
-
-                <div class="form-inline">
-                    <input type="checkbox" id="accept-lopd" required/>
-                    <label for="accept-lopd">He leído y acepto la política de privacidad</label>
-                </div>
-
+            <div class="flex-2">
                 <div>
-                    <button class="btn-main" type="submit">
-                        REGISTRARSE
-                    </button>
+                    <h3 class="big-h3 x-mt-0">Estamos mirando tu próxima película preferida. <br> ¿Te lo vas a perder?</h3>
                 </div>
-            </form>
+            </div>
 
+            <div class="flex-1"></div>
+
+            <div class="flex-2 s-mt-30">
+                <div class="x-width-90">
+                    <form action="">
+                        <div class="form-group-xl">
+                            <label for="name" class="hidden"></label>
+                            <input type="text" id="name" required placeholder="Nombre">
+                        </div>
+
+                        <div class="form-group-xl">
+                            <label for="email" class="hidden"></label>
+                            <input type="email" id="email" required placeholder="Correo electrónico">
+                        </div>
+
+                        <div class="form-group-xl">
+                            <label for="passsword" class="hidden"></label>
+                            <input type="password" id="passsword" required placeholder="Contraseña">
+                        </div>
+
+                        <small class="small-xs">
+                            INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
+                            <strong>OSCARS CLUB. Finalidades</strong>: recogida de datos para la
+                            inscripción como socio del interesado.<strong>Legitimación</strong>:
+                            Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas
+                            cesiones de datos a terceros, salvo obligación legal. <strong>Derechos</strong>:
+                            Puede retirar su consentimiento en cualquier momento, así como
+                            acceder, rectificar, suprimir sus datos y otros derechos
+                            dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información</strong>
+                            Adicional: Puede ampliar la información en el enlace de
+                            <a href="">Aviso Legal</a> y
+                            <a href="">Política de privacidad.</a>
+                        </small>
+
+                        <div class="form-inline mt-10">
+                            <input type="checkbox" id="accept-lopd" required/>
+                            <label for="accept-lopd" class="small-xxs">
+                                <small>He leído y acepto la política de privacidad</small>
+                            </label>
+                        </div>
+
+                        <div>
+                            <button class="btn-main btn-xl" type="submit">
+                                REGISTRARSE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+
+
 
 
     </section>
 
 </main>
 
-<footer class="footer flex-column">
-    <div class="x-flex-row s-mt-40">
-        <div class="x-justify-start s-text-center">
-            <div class="mb-5">
-                <a href="">Sobre nosotros</a>
-            </div>
-            <div class="mb-5">
-                <a href="">Aviso legal</a>
-            </div>
-            <div class="mb-5">
-                <a href="">Política de privacidad</a>
-            </div>
+<footer class="footer flex-column mt-40">
+
+    <div class="x-flex-row s-mt-40 s-text-center x-mt-40">
+
+        <div class="x-flex-row x-justify-start">
+            <ul>
+                <li>
+                    <a href="">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="">Aviso legal</a>
+                </li>
+                <li>
+                    <a href="">Política de privacidad</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="x-justify-end x-text-rigt s-text-center x-mr-40 s-mt-40">
-            <div class="mb-5">
-                <a href="">Facebook</a>
-            </div>
-            <div class="mb-5">
-                <a href="">Twitter</a>
-            </div>
-            <div class="mb-5">
-                <a href="">Youtube</a>
-            </div>
+        <div class="x-flex-row x-justify-end x-text-rigt x-mr-40 s-mt-40">
+            <ul>
+                <li>
+                    <a href="">Facebook</a>
+                </li>
+                <li>
+                    <a href="">Twitter</a>
+                </li>
+                <li>
+                    <a href="">Youtube</a>
+                </li>
+            </ul>
         </div>
+
     </div>
 
-    <div class="x-flex-column x-ml-40 s-mt-40 footer-references s-text-center">
-        <div class="mb-5">
-            <span> © 2020 Christian Muñiz Sobradelo</span>
+    <div class="x-flex-column x-ml-40 x-mt-30 s-mt-40 s-text-center footer-references">
+        <div>
+            <small> © 2020 Christian Muñiz Sobradelo</small>
         </div>
-        <div class="mb-5">
-            <a href="https://www.flaticon.com">Iconos flaticon.com</a>
+        <div>
+            <small>
+                <a href="https://www.flaticon.com">Iconos flaticon.com</a>
+            </small>
         </div>
 
-        <div class="mb-5">
-            <a href="https://unsplash.com">Imágenes unsplash.com</a>
+        <div>
+            <small>
+                <a href="https://unsplash.com">Imágenes unsplash.com</a>
+            </small>
         </div>
     </div>
 

@@ -105,6 +105,7 @@ a.main-link > span{
 
 /*Botones*/
 .btn-main {
+    cursor: pointer;
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding: 10px 15px;
@@ -113,6 +114,10 @@ a.main-link > span{
     letter-spacing: 1px;
     background-color: var(--btn-red-background-color);
     color: var(--btn-red-background-link-color);
+}
+
+.btn-xl {
+    padding: 15px 20px;
 }
 
 .btn-main:hover {
@@ -143,10 +148,10 @@ a.main-link > span{
     flex: 1;
 }
 
-.flex-1 {flex: 1;}
-.flex-2 {flex: 2;}
-.flex-3 {flex: 3;}
-.flex-4 {flex: 4;}
+.flex-1 {flex: 1 !important;}
+.flex-2 {flex: 2 !important;}
+.flex-3 {flex: 3 !important;}
+.flex-4 {flex: 4 !important;}
 
 /*Margenes*/
 .mr-5 {margin-right: 5px;}
@@ -192,6 +197,42 @@ a.main-link > span{
 .text-rigt {
     text-align: right;
 }
+
+/*Formularios*/
+
+.form-group-xl > input {
+    height: 40px;
+    border: solid 1px black;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.big-h3 {
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+
+.small-s {
+    font-size: 0.9rem;
+}
+
+.small-xs {
+    font-size: 0.8rem;
+}
+
+.small-xxs {
+    font-size: 0.7rem;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', serif;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
 /*Propiedades dependientes de tamaño de pantalla*/
 @media screen and (max-width: 799px) {
     .s-flex-order-1 {
@@ -214,6 +255,18 @@ a.main-link > span{
         order: 4;
     }
 
+    .s-flex-1 {
+        flex: 1;
+    }
+
+    .s-flex-2 {
+        flex: 2;
+    }
+
+    .s-flex-3 {
+        flex: 3;
+    }
+
     .s-justifiy-center {
         justify-content: center;
     }
@@ -227,39 +280,39 @@ a.main-link > span{
         min-width: 100vw;
     }
 
-    .s-width-20 {
+    .s-width-20vw {
         width: 20vw;
     }
 
-    .s-width-30 {
+    .s-width-30vw {
         width: 30vw;
     }
 
-    .s-width-40 {
+    .s-width-40vw {
         width: 40vw;
     }
 
-    .s-width-50 {
+    .s-width-50vw {
         width: 50vw;
     }
 
-    .s-width-60 {
+    .s-width-60vw {
         width: 60vw;
     }
 
-    .s-width-70 {
+    .s-width-70vw {
         width: 70vw;
     }
 
-    .s-width-80 {
+    .s-width-80vw {
         width: 80vw;
     }
 
-    .s-width-90 {
+    .s-width-90vw {
         width: 90vw;
     }
 
-    .s-width-100 {
+    .s-width-100vw {
         width: 100vw;
     }
 
@@ -300,6 +353,10 @@ a.main-link > span{
     .s-mb-20 {margin-bottom: 20px;}
     .s-mb-30 {margin-bottom: 30px;}
     .s-mb-40 {margin-bottom: 40px;}
+
+    .s-text-left {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -310,6 +367,18 @@ a.main-link > span{
 
     .x-flex > * {
         flex: 1;
+    }
+
+    .x-flex-1 {
+        flex: 1;
+    }
+
+    .x-flex-2 {
+        flex: 2;
+    }
+
+    .x-flex-3 {
+        flex: 3;
     }
 
     .x-flex-order-1 {
@@ -336,39 +405,39 @@ a.main-link > span{
         justify-content: flex-start;
     }
 
-    .x-width-20 {
+    .x-width-20vw {
         width: 20vw;
     }
 
-    .x-width-30 {
+    .x-width-30vw {
         width: 30vw;
     }
 
-    .x-width-40 {
+    .x-width-40vw {
         width: 40vw;
     }
 
-    .x-width-50 {
+    .x-width-50vw {
         width: 50vw;
     }
 
-    .x-width-60 {
+    .x-width-60vw {
         width: 60vw;
     }
 
-    .x-width-70 {
+    .x-width-70vw {
         width: 70vw;
     }
 
-    .x-width-80 {
+    .x-width-80vw {
         width: 80vw;
     }
 
-    .x-width-90 {
+    .x-width-90vw {
         width: 90vw;
     }
 
-    .x-width-100 {
+    .x-width-100vw {
         width: 100vw;
     }
 
@@ -396,6 +465,7 @@ a.main-link > span{
         text-align: right;
     }
 
+    .x-mr-0 {margin-right: 0;}
     .x-mr-5 {margin-right: 5px;}
     .x-mr-10 {margin-right: 10px;}
     .x-mr-15 {margin-right: 15px;}
@@ -403,6 +473,7 @@ a.main-link > span{
     .x-mr-30 {margin-right: 30px;}
     .x-mr-40 {margin-right: 40px;}
 
+    .x-ml-0 {margin-left: 0;}
     .x-ml-5 {margin-left: 5px;}
     .x-ml-10 {margin-left: 10px;}
     .x-ml-15 {margin-left: 15px;}
@@ -410,6 +481,7 @@ a.main-link > span{
     .x-ml-30 {margin-left: 30px;}
     .x-ml-40 {margin-left: 40px;}
 
+    .x-mt-0 {margin-top: 0;}
     .x-mt-5 {margin-top: 5px;}
     .x-mt-10 {margin-top: 10px;}
     .x-mt-15 {margin-top: 15px;}
@@ -417,6 +489,7 @@ a.main-link > span{
     .x-mt-30 {margin-top: 30px;}
     .x-mt-40 {margin-top: 40px;}
 
+    .x-mb-0 {margin-bottom: 0;}
     .x-mb-5 {margin-bottom: 5px;}
     .x-mb-10 {margin-bottom: 10px;}
     .x-mb-15 {margin-bottom: 15px;}
@@ -424,14 +497,94 @@ a.main-link > span{
     .x-mb-30 {margin-bottom: 30px;}
     .x-mb-40 {margin-bottom: 40px;}
 
+    .x-width-20 {
+        width: 20%;
+    }
 
+    .x-width-30 {
+        width: 30%;
+    }
+
+    .x-width-40 {
+        width: 40%;
+    }
+
+    .x-width-50 {
+        width: 50%;
+    }
+
+    .x-width-60 {
+        width: 60%;
+    }
+
+    .x-width-70 {
+        width: 70%;
+    }
+
+    .x-width-80 {
+        width: 80%;
+    }
+
+    .x-width-90 {
+        width: 90%;
+    }
+
+    .x-width-100 {
+        width: 100%;
+    }
+
+    .x-justify-space-between {
+        justify-content: space-between;
+    }
+
+    .x-big-h2 {
+        font-size: 2rem;
+    }
+}
+
+/*Listas*/
+@media screen and (max-width: 800px) {
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    ul li {
+        margin-left: 0;
+        display: inline;
+    }
+
+    ul li:not(:last-child):after {
+        font-weight: normal;
+        content: " · ";
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
 }
 
 /*Index*/
+#join-the-club a{
+    color: var(--contrast-color);
+}
+
+#join-the-club a:hover{
+    color: var(--link-color);
+}
 
 @media screen and (max-width: 800px) {
     .menu-link > img {
         width: 50%;
+    }
+
+    .s-joinclub-subtitle > h3 {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -439,4 +592,9 @@ a.main-link > span{
     .menu-link > img {
         width: 60%;
     }
+
+
 }
+
+
+
