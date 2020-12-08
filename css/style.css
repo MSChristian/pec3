@@ -354,9 +354,11 @@ a.main-link > span {
     width: 100vw;
 }
 
-.flex-align-end {
+.align-items-flex-end {
     align-items: flex-end;
 }
+
+
 
 /*Propiedades dependientes de tamaño de pantalla*/
 @media screen and (max-width: 799px) {
@@ -550,7 +552,12 @@ a.main-link > span {
     .s-text-left {
         text-align: left;
     }
+
+    .s-align-self-flex-start {
+        align-self: flex-start;
+    }
 }
+
 
 @media screen and (min-width: 800px) {
     .x-flex {
@@ -938,11 +945,22 @@ h3.dotted-before:before {
     background-color: white;
     font-weight: bold;
 }
+.session-card .session-images{
+    align-self: center;
+    justify-self: center;
+}
 
 @media screen and (max-width: 800px) {
 
     .session-images div {
         margin-top: 20px;
+    }
+
+    .session-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
     }
 }
 
