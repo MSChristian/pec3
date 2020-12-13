@@ -15,8 +15,6 @@
     --btn-red-background-link-hover-color: rgb(28, 28, 28);
 }
 
-
-
 body, html {
     background-color: var(--background-footer-color);
     overflow-x: hidden;
